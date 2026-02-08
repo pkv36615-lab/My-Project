@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مولد مقاطع القرآن القصيرة</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>مولّد مقاطع القرآن القصيرة</h1>
+        <p>أنشئ Reels/Shorts بتلاوة جميلة ونص عثماني خلال ثوانٍ.</p>
+      </header>
+
+      <section class="card">
+        <label>
+          السورة
+          <input id="surah" type="number" min="1" max="114" value="1" />
+        </label>
+        <label>
+          الآية
+          <input id="ayah" type="number" min="1" value="1" />
+        </label>
+        <label>
+          القارئ
+          <select id="reciter"></select>
+        </label>
+        <label>
+          الجودة
+          <select id="quality">
+            <option value="balanced">متوازن (جودة أعلى)</option>
+            <option value="potato">خفيف للأجهزة الضعيفة</option>
+          </select>
+        </label>
+        <button id="render">إنشاء الفيديو</button>
+      </section>
+
+      <section class="card" id="result">
+        <h2>النتيجة</h2>
+        <p id="status">اضغط على زر إنشاء الفيديو لبدء المعالجة.</p>
+        <div class="progress">
+          <div class="progress__bar" id="progress-bar"></div>
+        </div>
+        <video id="preview" controls></video>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
