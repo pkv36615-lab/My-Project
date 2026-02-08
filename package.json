@@ -1,0 +1,11 @@
+{
+  "name": "quran-shorts-generator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "مولّد مقاطع القرآن القصيرة",
+  "scripts": {
+    "start": "python backend/app.py",
+    "dev": "python backend/app.py",
+    "test": "python -m pytest"
+  }
+}
